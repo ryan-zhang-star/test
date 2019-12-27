@@ -12,6 +12,6 @@ class IndexController extends Controller
     }
     public function main123()
     {
-        return 'AAAAAAAAA123';
+        return 'AAAAAAAAA123456';
     }
 }
