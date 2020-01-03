@@ -8,10 +8,10 @@ class IndexController extends Controller
 {
     public function main()
     {
-        return 'Yeeeeee';
+        return 'I am alan !!';
     }
     public function main123()
     {
-        return 'Yeeeee123123e';
+        return 'I am alan !!';
     }
 }
