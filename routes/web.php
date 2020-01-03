@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('/main', 'IndexController@main');
+
+Route::get('/eric', function(){
+    return "I am Eric !";
+
+});
