@@ -6,12 +6,21 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    public function main()
+    public function main(Request $request, $aaa, $ccc = null)
     {
-        return 'Yeeeeee';
+        $zzz = array($aaa, $ccc);
+        
+        $this->changeValue($zzz);
+        return $this->myFunction($zzz);
     }
-    public function main123()
+
+    private function changeValue(&$zzz)
     {
-        return 'AAAAAAAAA123456';
+        $zzz[1] = 'fuck';
+    }
+
+    private function myFunction($zzz)
+    {
+        return "Yeeeeee$zzz[0]----$zzz[1]";
     }
 }

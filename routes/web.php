@@ -15,4 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/main', 'IndexController@main');
+Route::get('/main/{aaa}/bbb/{ccc?}', 'IndexController@main');
