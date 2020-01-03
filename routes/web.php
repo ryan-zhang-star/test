@@ -15,4 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+<<<<<<< HEAD
 Route::get('/main/123', 'IndexController@main');
+=======
+Route::get('/main/{aaa}/bbb/{ccc?}', 'IndexController@main');
+>>>>>>> 0932966c12e6eff16d3d0f63bb61d76237730e79
