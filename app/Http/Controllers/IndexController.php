@@ -12,6 +12,6 @@ class IndexController extends Controller
     }
     public function main123()
     {
-        return 'Yeeeee123123e';
+        return '歡迎光臨My Phone';
     }
 }
