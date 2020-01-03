@@ -12,6 +12,7 @@ class IndexController extends Controller
     }
     public function main123()
     {
+        $fuck='mylife';
         return 'Yeeeee123123e';
     }
 }
