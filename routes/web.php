@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/main', 'IndexController@main');
+Route::get('/Decimal/{aaa}/{bbb}','IndexController@practice');
