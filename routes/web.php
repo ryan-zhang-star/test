@@ -18,5 +18,5 @@ Route::get('/', function () {
 Route::get('/main/123', 'IndexController@main');
 Route::get('/main/{aaa}/bbb/{ccc?}', 'IndexController@main');
 
-//20200103課後練習
+/*20200103課後練習*/
 Route::get('/base/{Decimal}/{Base}', 'BaseController@main');

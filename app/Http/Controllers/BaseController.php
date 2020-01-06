@@ -14,14 +14,15 @@ class BaseController extends Controller
         } else if ($SecBase == 8) {
             $ans = base_convert($FirstDec, 10, 8);
             return "轉換成$SecBase 進制: $ans";
-        }else if ($SecBase == 10) {
+        } else if ($SecBase == 10) {
             $ans = base_convert($FirstDec, 10, 10);
             return "轉換成 $SecBase 進制: $ans";
-        } else if ($SecBase == 16) {
+        }else if ($SecBase == 16) {
             $ans = base_convert($FirstDec, 10, 16);
             return "轉換成 $SecBase 進制: $ans";
         } else {
-            return "是在哈囉？只有'2','8','16'可以轉，</br>5秒後幫你轉跳CornHub...";
+            $ans = base_convert($FirstDec, 10, 2);
+            return "不好意思！僅支援'2','8','10','16'，</br>轉換成 2 進制: $ans </br>5秒後幫你轉跳CornHub...";
         }
     }
 }
