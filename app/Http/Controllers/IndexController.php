@@ -14,4 +14,8 @@ class IndexController extends Controller
     {
         return 'I am alan !!';
     }
+    public function ryanFormat($number, $foramt_type = 2)
+    {
+        return base_convert($number, '10', $foramt_type);
+    }
 }
