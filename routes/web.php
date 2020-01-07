@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::get('/main', 'IndexController@main');
+Route::get('/main/{aaa}/{bbb?}', 'IndexController@index');
