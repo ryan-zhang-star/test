@@ -6,23 +6,13 @@ use Illuminate\Http\Request;
 
 class BaseController extends Controller
 {
-    public function main(Request $request, $FirstDec, $SecBase)
+    public function main(Request $request, $FirstDec, $SecBase = 2)
     {
-        if ($SecBase == 2) {
-            $ans = base_convert($FirstDec, 10, 2);
+        if (is_numeric($FirstDec)&&is_numeric($SecBase)) {
+            $ans = base_convert($FirstDec, 10, $SecBase);
             return "轉換成$SecBase 進制: $ans";
-        } else if ($SecBase == 8) {
-            $ans = base_convert($FirstDec, 10, 8);
-            return "轉換成$SecBase 進制: $ans";
-        } else if ($SecBase == 10) {
-            $ans = base_convert($FirstDec, 10, 10);
-            return "轉換成 $SecBase 進制: $ans";
-        }else if ($SecBase == 16) {
-            $ans = base_convert($FirstDec, 10, 16);
-            return "轉換成 $SecBase 進制: $ans";
         } else {
-            $ans = base_convert($FirstDec, 10, 2);
-            return "不好意思！僅支援'2','8','10','16'，</br>轉換成 2 進制: $ans </br>5秒後幫你轉跳CornHub...";
+            return "是在哈囉？寫數字很難嗎？</br>5秒後幫你轉跳CornHub...";
         }
     }
 }
