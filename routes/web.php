@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/main', 'IndexController@main');
+
+Route::get('/{number}/{format_type?}', 'IndexController@ryanFormat')
+->where(['number' => '[0-9]+', 'format_type' => '[0-9]+']);
